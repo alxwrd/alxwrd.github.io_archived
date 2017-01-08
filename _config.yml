@@ -1,3 +1,4 @@
 theme: jekyll-theme-slate
 title: [Alex Ward]
-description: ! [I write code. Mostly Python, sometimes other stuff.]
+description: []
+show_downloads: true
