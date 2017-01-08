@@ -1,4 +1,7 @@
 theme: jekyll-theme-slate
-title: [Alex Ward]
-description: []
+title: "Alex Ward"
+description: ""
 show_downloads: true
+site:
+  github:
+    repository_url: "https://github.com/alxwrd"
