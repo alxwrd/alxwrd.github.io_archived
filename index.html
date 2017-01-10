@@ -1,3 +1,7 @@
+---
+#This is the main page
+---
+
 <!DOCTYPE HTML>
 <!--
 	Dopetrope by HTML5 UP
@@ -6,7 +10,7 @@
 -->
 <html>
 	<head>
-		<title>Dopetrope by HTML5 UP</title>
+		<title>alxwrd</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -61,7 +65,7 @@
 							</section>
 
 						<!-- Intro -->
-							<section id="intro" class="container">
+							<!--<section id="intro" class="container">
 								<div class="row">
 									<div class="4u 12u(mobile)">
 										<section class="first">
@@ -97,7 +101,7 @@
 										<li><a href="#" class="button alt big">Learn More</a></li>
 									</ul>
 								</footer>
-							</section>
+							</section>-->
 
 					</div>
 				</div>
@@ -111,83 +115,29 @@
 								<!-- Portfolio -->
 									<section>
 										<header class="major">
-											<h2>My Portfolio</h2>
+											<h2>My Stuff</h2>
 										</header>
 										<div class="row">
-											<div class="4u 12u(mobile)">
-												<section class="box">
-													<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-													<header>
-														<h3>Ipsum feugiat et dolor</h3>
-													</header>
-													<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit  adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-													<footer>
-														<a href="#" class="button alt">Find out more</a>
-													</footer>
-												</section>
-											</div>
-											<div class="4u 12u(mobile)">
-												<section class="box">
-													<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-													<header>
-														<h3>Sed etiam lorem nulla</h3>
-													</header>
-													<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit  adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-													<footer>
-														<a href="#" class="button alt">Find out more</a>
-													</footer>
-												</section>
-											</div>
-											<div class="4u 12u(mobile)">
-												<section class="box">
-													<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-													<header>
-														<h3>Consequat et tempus</h3>
-													</header>
-													<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit  adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-													<footer>
-														<a href="#" class="button alt">Find out more</a>
-													</footer>
-												</section>
-											</div>
+											{% for feature in site.featured limit:6 %}
+												<div class="4u 12u(mobile)">
+												  <section class="box">
+												    <a href="#" class="image featured"><img src="{{ feature.image }}" alt="" /></a>
+												    <header>
+												      <h3>{{ feature.title }}</h3>
+												    </header>
+												    <p>{{ feature.snippet }}</p>
+												    <footer>
+												      <a href="{{ feature.url }}" class="button alt">Find out more</a>
+												    </footer>
+												  </section>
+												</div>
+											{% endfor %}
+
 										</div>
 										<div class="row">
-											<div class="4u 12u(mobile)">
-												<section class="box">
-													<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-													<header>
-														<h3>Blandit sed adipiscing</h3>
-													</header>
-													<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit  adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-													<footer>
-														<a href="#" class="button alt">Find out more</a>
-													</footer>
-												</section>
-											</div>
-											<div class="4u 12u(mobile)">
-												<section class="box">
-													<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
-													<header>
-														<h3>Etiam nisl consequat</h3>
-													</header>
-													<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit  adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-													<footer>
-														<a href="#" class="button alt">Find out more</a>
-													</footer>
-												</section>
-											</div>
-											<div class="4u 12u(mobile)">
-												<section class="box">
-													<a href="#" class="image featured"><img src="images/pic07.jpg" alt="" /></a>
-													<header>
-														<h3>Dolore nisl feugiat</h3>
-													</header>
-													<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit  adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-													<footer>
-														<a href="#" class="button alt">Find out more</a>
-													</footer>
-												</section>
-											</div>
+
+
+
 										</div>
 									</section>
 

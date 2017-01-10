@@ -1,7 +1,7 @@
-theme: jekyll-theme-slate
+theme: dopetrope #By HTML5UP https://html5up.net/dopetrope
 title: "Alex Ward"
 description: ""
-show_downloads: true
-github:
-  repository_url: "https://github.com/alxwrd"
-  
+
+collections:
+  featured:
+    output: true
