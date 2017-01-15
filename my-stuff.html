@@ -1,0 +1,38 @@
+---
+layout: default
+---
+					</div>
+				</div>
+
+			<!-- Main -->
+				<div id="main-wrapper">
+					<div class="container">
+						<div class="row">
+							<div class="12u">
+
+								<!-- Portfolio -->
+									<section>
+										<header class="major">
+											<h2>My Stuff</h2>
+										</header>
+										<div class="row">
+											{% for feature in site.featured limit:6 %}
+												<div class="4u 12u(mobile)">
+												  <section class="box">
+												    <a href="#" class="image featured"><img src="{{ feature.image }}" alt="" /></a>
+												    <header>
+												      <h3>{{ feature.title }}</h3>
+												    </header>
+												    <p>{{ feature.snippet }}</p>
+												    <footer>
+												      <a href="{{ feature.url }}" class="button alt">Find out more</a>
+												    </footer>
+												  </section>
+												</div>
+											{% endfor %}
+
+										</div>
+									</section>
+
+							</div>
+						</div>
