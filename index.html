@@ -5,8 +5,8 @@ layout: default
 						<!-- Banner -->
 							<section id="banner">
 								<header>
-									<h2>Howdy. This is Dopetrope.</h2>
-									<p>A responsive template by HTML5 UP</p>
+									<h2>{{ site.greeting }}</h2>
+									<p>{{ site.tag-line }}</p>
 								</header>
 							</section>
 
@@ -15,29 +15,35 @@ layout: default
 								<div class="row">
 									<div class="4u 12u(mobile)">
 										<section class="first">
-											<i class="icon featured fa fa-user"></i>
+											<a href="/about/">
+												<i class="icon featured fa fa-user"></i>
+											</a>
 											<header>
 												<h2>About me</h2>
 											</header>
-											<p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
+											<p></p>
 										</section>
 									</div>
 									<div class="4u 12u(mobile)">
 										<section class="middle">
-											<i class="icon featured alt fa fa-code"></i>
+											<a href="/about/">
+												<i class="icon featured alt fa fa-code"></i>
+											</a>
 											<header>
 												<h2>About my stack</h2>
 											</header>
-											<p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
+											<p></p>
 										</section>
 									</div>
 									<div class="4u 12u(mobile)">
-										<section class="last">
-											<i class="icon featured alt2 fa fa-envelope"></i>
+										<section class="last"><a href="test">
+											<a href="/contact/">
+												<i class="icon featured alt2 fa fa-envelope"></i></a>
+											</a>
 											<header>
 												<h2>Contact me</h2>
 											</header>
-											<p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
+											<p></p>
 										</section>
 									</div>
 								</div>
@@ -48,7 +54,6 @@ layout: default
 									</ul>
 								</footer> -->
 							</section>
-
 					</div>
 				</div>
 
@@ -56,8 +61,9 @@ layout: default
 				<div id="main-wrapper">
 					<div class="container">
 						<div class="row">
-							<div class="12u">
 
+							<div class="12u">
+								<a name="my-stuff"></a>
 								<!-- Portfolio -->
 									<section>
 										<header class="major">
@@ -67,7 +73,7 @@ layout: default
 											{% for feature in site.featured limit:6 %}
 												<div class="4u 12u(mobile)">
 												  <section class="box">
-												    <a href="#" class="image featured"><img src="{{ feature.image }}" alt="" /></a>
+												    <a href="{{ feature.url }}" class="image featured"><img src="{{ feature.image }}" alt="" /></a>
 												    <header>
 												      <h3>{{ feature.title }}</h3>
 												    </header>
@@ -88,7 +94,7 @@ layout: default
 							<div class="12u">
 
 								<!-- Blog -->
-									<section>
+									<!-- <section>
 										<header class="major">
 											<h2>The Blog</h2>
 										</header>
@@ -126,7 +132,7 @@ layout: default
 												</section>
 											</div>
 										</div>
-									</section>
+									</section> -->
 
 							</div>
 						</div>

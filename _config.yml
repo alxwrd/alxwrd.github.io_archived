@@ -1,8 +1,10 @@
 #theme: dopetrope - By HTML5UP https://html5up.net/dopetrope
 title: "Alex Ward"
 name: "Alex Ward"
-description: ""
+greeting: "Greeting"
+tag-line: "Tag line"
 permalink: pretty
+
 
 collections:
   featured:
