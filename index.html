@@ -76,6 +76,16 @@ layout: default
 												    <a href="{{ feature.url }}" class="image featured"><img src="{{ feature.image }}" alt="" /></a>
 												    <header>
 												      <h3>{{ feature.title }}</h3>
+															<h6>
+																{% for lang in feature.languages %}
+																	{% if lang == "python" %}
+																	<font color="#3572A5">
+																	{% elsif lang == "html" %}
+																	<font color="#e44b23">
+																	{% endif %}
+																		⚫</font> {{lang}}
+																{% endfor %}
+															</h6>
 												    </header>
 												    <p>{{ feature.snippet }}</p>
 												    <footer>

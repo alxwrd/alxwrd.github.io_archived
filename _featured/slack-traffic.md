@@ -5,6 +5,7 @@ image: "/images/slack-traffic.jpg"
 layout: featured
 permalink: slack-traffic/
 github-url: "https://github.com/alxwrd/slack-traffic"
+languages: ["python"]
 ---
 
 Traffic Bot is a [slack](https://slack.com/) bot for traffic alerts in the UK. Data is pulled from an xml feed from [highways.gov.uk](http://www.highways.gov.uk), and then pushed to your slack webhook.
